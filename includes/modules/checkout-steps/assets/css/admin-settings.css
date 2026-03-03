@@ -1,0 +1,104 @@
+.spwsv-choice-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:12px;
+  max-width:100%;
+}
+
+.spwsv-choice-grid--small{
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+}
+
+.spwsv-choice{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:12px;
+  border:1px solid #dcdcde;
+  border-radius:22px;
+  background:#fff;
+  cursor:pointer;
+  user-select:none;
+  transition:border-color .15s ease, box-shadow .15s ease, transform .08s ease;
+}
+
+.spwsv-choice:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(0,0,0,.06);
+  border-color:#c3c4c7;
+}
+
+.spwsv-choice input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.spwsv-choice-thumb{
+  width:100%;
+  height: 240px;
+  border-radius:12px;
+  background:#f6f7f7;
+  border:1px solid #eaecf0;
+  position:relative;
+  overflow:hidden;
+}
+
+.spwsv-choice-grid--small .spwsv-choice-thumb{
+  height:98px;
+}
+
+.spwsv-choice-title{
+  font-weight:600;
+  color:#1d2327;
+  text-align: center;
+}
+
+.spwsv-choice input:checked + .spwsv-choice-thumb{
+  outline:2px solid #2271b1;
+}
+
+.spwsv-thumb--distribution-minimal-steps:before,
+.spwsv-thumb--distribution-woocommerce-steps:before{
+  content:'';
+  position:absolute;
+  inset:14px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#fff, #e9eef7);
+  background-size:cover;
+  background-position:top center;
+  background-repeat:no-repeat;
+  border:1px solid rgba(0,0,0,.06);
+}
+
+.spwsv-thumb--distribution-minimal-steps:before{
+  background-image: url('../img/dist_min.webp');
+}
+
+.spwsv-thumb--distribution-woocommerce-steps::before{
+  background-image: url('../img/dist_woo.webp');
+}
+
+.spwsv-thumb--theme-none:before,
+.spwsv-thumb--theme-light:before,
+.spwsv-thumb--theme-dark:before{
+  content:'';
+  position:absolute;
+  inset:14px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,.08);
+}
+
+.spwsv-thumb--theme-none:before{
+  background:repeating-linear-gradient(135deg,#ffffff,#ffffff 10px,#f6f7f7 10px,#f6f7f7 20px);
+}
+
+.spwsv-thumb--theme-light:before{
+  background:#ffffff;
+}
+
+.spwsv-thumb--theme-dark:before{
+  background:#0b1220;
+  border-color:rgba(255,255,255,.12);
+}
+

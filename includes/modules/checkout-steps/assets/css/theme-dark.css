@@ -1,0 +1,43 @@
+body.sp-wsv-simple{
+    --spwsv-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    --spwsv-font-size: 14px;
+    --spwsv-line-height: 1.4;
+
+    --spwsv-accent: #60a5fa;
+    --spwsv-accent-2: #2563eb;
+    --spwsv-on-accent: #0b0f19;
+    --spwsv-danger: #f87171;
+    --spwsv-danger-border: rgba(248,113,113,.6);
+    --spwsv-notice-success-border: rgba(74,222,128,.6);
+    --spwsv-notice-info-border: rgba(96,165,250,.55);
+    --spwsv-notice-warning-border: rgba(251,191,36,.55);
+    --spwsv-focus-ring: rgba(96,165,250,.28);
+
+    --spwsv-text: #e5e7eb;
+    --spwsv-muted: #a1a1aa;
+
+    --spwsv-page-bg: #0b0f19;
+    --spwsv-panel-bg: #0f172a;
+    --spwsv-sidebar-bg: #0f172a;
+    --spwsv-split-bg: var(--spwsv-page-bg);
+
+    --spwsv-page-bg-split-main: #0b0f19;
+    --spwsv-page-bg-split-side: #0b1220;
+
+    --spwsv-border: #1f2937;
+    --spwsv-border-soft: #243041;
+
+    background: var(--spwsv-page-bg);
+    color: var(--spwsv-text);
+}
+
+body.sp-wsv-simple.sp-wsv-theme-dark .blockUI.blockOverlay{
+    background: rgba(11,15,25,.62) !important;
+    opacity: 1 !important;
+}
+
+body.sp-wsv-simple.sp-wsv-theme-dark :where(.woocommerce, .woocommerce-page) :where(.blockUI.blockOverlay, .woocommerce .blockUI.blockOverlay)::before,
+body.sp-wsv-simple.sp-wsv-theme-dark :where(.woocommerce, .woocommerce-page) .loader::before{
+    border-color: rgba(229,231,235,.22) !important;
+    border-top-color: rgba(96,165,250,.9) !important;
+}

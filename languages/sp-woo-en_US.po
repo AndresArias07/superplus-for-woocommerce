@@ -1,0 +1,472 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SuperPlus para Woocommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-18 16:10+0000\n"
+"PO-Revision-Date: 2026-02-23 08:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-7.4.29\n"
+"X-Domain: superplus-for-woocommerce"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:113
+msgid "%d artículo"
+msgid_plural "%d artículos"
+msgstr[0] "%d artículo"
+msgstr[1] "%d artículos"
+
+#: includes/admin/views/modules-page.php:9
+msgid ""
+"Activa o desactiva los módulos disponibles. Los módulos desactivados no "
+"cargan hooks ni assets."
+msgstr ""
+"Activa o desactiva los módulos disponibles. Los módulos desactivados no "
+"cargan hooks ni assets."
+
+#: includes/admin/views/modules-page.php:87
+msgid "Activar o desactivar módulo"
+msgstr "Activar o desactivar módulo"
+
+#: includes/admin/class-sp-wsv-plugin-meta.php:52
+msgid "Adquirir PRO"
+msgstr "Adquirir PRO"
+
+#. Author of the plugin
+msgid "Agencia SP"
+msgstr "Agencia SP"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:726
+msgid "Aplicando cupón…"
+msgstr "Aplicando cupón…"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:965
+msgid "Aplicar"
+msgstr "Aplicar"
+
+#: includes/admin/views/modules-page.php:66
+msgid "Bloqueado"
+msgstr "Bloqueado"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:1076
+msgid "Calculando…"
+msgstr "Calculando…"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:571
+msgid ""
+"Cambia solo colores/contraste del diseño. “Sin tema” usa el estilo del tema "
+"activo."
+msgstr ""
+"Cambia solo colores/contraste del diseño. “Sin tema” usa el estilo del tema "
+"activo."
+
+#: includes/admin/class-sp-wsv-admin.php:245
+msgid "Cambios guardados."
+msgstr "Cambios guardados."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:143
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:169
+#: includes/modules/checkout-steps/templates/page-cart.php:47
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:44
+msgid "Carrito"
+msgstr "Carrito"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:8
+msgid "Catálogo + buscador"
+msgstr "Catálogo + buscador"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:359
+msgid "Claro"
+msgstr "Claro"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:14
+msgid ""
+"Con paginado real y sistema de navegación, no como los menús nativos de "
+"Wordpress."
+msgstr ""
+"Con paginado real y sistema de navegación, no como los menús nativos de "
+"Wordpress."
+
+#: includes/admin/class-sp-wsv-admin.php:157
+#: includes/admin/class-sp-wsv-admin.php:158
+#: includes/admin/class-sp-wsv-plugin-meta.php:48
+msgid "Configuración"
+msgstr "Configuración"
+
+#: includes/admin/views/settings-page.php:6
+msgid "Configuración de SuperPlus para Woocommerce"
+msgstr "Configuración de SuperPlus para Woocommerce"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:210
+msgid "Continuar"
+msgstr "Continuar"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:590
+msgid "CSS adicional"
+msgstr "CSS adicional"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:591
+msgid "CSS opcional para ajustes finos. Se aplica al final del CSS del módulo."
+msgstr ""
+"CSS opcional para ajustes finos. Se aplica al final del CSS del módulo."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:963
+msgid "Cupón"
+msgstr "Cupón"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:727
+msgid "Cupón aplicado."
+msgstr "Cupón aplicado."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:964
+msgid "Código de cupón"
+msgstr "Código de cupón"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:149
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:176
+#: includes/modules/checkout-steps/templates/page-cart.php:53
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:52
+msgid "Datos"
+msgstr "Datos"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:78
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout.php:34
+msgid "Datos de facturación y envío"
+msgstr "Datos de facturación y envío"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:12
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout.php:11
+msgid "Debes iniciar sesión para finalizar compra."
+msgstr "Debes iniciar sesión para finalizar compra."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:550
+msgid "Define el estilo visual y el “flujo” de la página de finalizar compra."
+msgstr "Define el estilo visual y el “flujo” de la página de finalizar compra."
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:23
+msgid "Direcciones múltiples"
+msgstr "Direcciones múltiples"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:158
+msgid "Dirección"
+msgstr "Dirección"
+
+#: includes/admin/views/modules-page.php:98
+msgid "Disponible con licencia"
+msgstr "Disponible con licencia"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:549
+msgid "Distribución"
+msgstr "Distribución"
+
+#: includes/admin/class-sp-wsv-plugin-meta.php:68
+msgid "Documentación"
+msgstr "Documentación"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:160
+msgid "Editar"
+msgstr "Editar"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:9
+msgid ""
+"El catálogo que toda tienda online necesita: filtros, buscador y paginado."
+msgstr ""
+"El catálogo que toda tienda online necesita: filtros, buscador y paginado."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:1070
+msgid "Envío"
+msgstr "Envío"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:155
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:182
+#: includes/modules/checkout-steps/templates/page-cart.php:59
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:59
+msgid "Envío y pago"
+msgstr "Envío y pago"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout.php:56
+msgid "Envío, pago y resumen"
+msgstr "Envío, pago y resumen"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:26
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:524
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:532
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:618
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:619
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:632
+msgid "Finalizar compra"
+msgstr "Finalizar compra"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:24
+msgid "Finalizar compra PRO"
+msgstr "Finalizar compra PRO"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:170
+msgid "Forma de pago"
+msgstr "Forma de pago"
+
+#: includes/admin/views/modules-page.php:7
+msgid "Gestión de módulos"
+msgstr "Gestión de módulos"
+
+#: includes/admin/views/modules-page.php:116
+msgid "Guardar cambios"
+msgstr "Guardar cambios"
+
+#: includes/admin/views/modules-page.php:112
+msgid "Guardar módulos"
+msgstr "Guardar módulos"
+
+#. Author URI of the plugin
+msgid "https://agenciasp.com"
+msgstr "https://agenciasp.com"
+
+#: includes/admin/class-sp-wsv-admin.php:65
+msgid "Mejora el checkout y añade funcionalidades premium a tu tienda."
+msgstr "Mejora el checkout y añade funcionalidades premium a tu tienda."
+
+#. Description of the plugin
+msgid "Mejora tu tienda online con menos de diez clics."
+msgstr "Mejora tu tienda online con menos de diez clics."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:30
+msgid ""
+"Mejora visual de la página de finalizar compra con resumen lateral y "
+"opciones de estilo."
+msgstr ""
+"Mejora visual de la página de finalizar compra con resumen lateral y "
+"opciones de estilo."
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:18
+msgid "Mensajes de WooCommerce"
+msgstr "Mensajes de WooCommerce"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:13
+msgid "Menú móvil"
+msgstr "Menú móvil"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:344
+msgid "Minimalista por pasos"
+msgstr "Minimalista por pasos"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:172
+msgid "Modificar"
+msgstr "Modificar"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:101
+msgid "Método de envío y pago"
+msgstr "Método de envío y pago"
+
+#: includes/admin/class-sp-wsv-admin.php:146
+#: includes/admin/class-sp-wsv-admin.php:147
+msgid "Módulos"
+msgstr "Módulos"
+
+#: includes/admin/class-sp-wsv-admin.php:293
+msgid "No hay módulos activos con opciones."
+msgstr "No hay módulos activos con opciones."
+
+#: includes/admin/views/modules-page.php:26
+msgid "No hay módulos registrados."
+msgstr "No hay módulos registrados."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:728
+msgid "No se pudo aplicar el cupón en este momento."
+msgstr "No se pudo aplicar el cupón en este momento."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:729
+msgid "No se pudo aplicar el cupón. Revisa el código e inténtalo de nuevo."
+msgstr "No se pudo aplicar el cupón. Revisa el código e inténtalo de nuevo."
+
+#: includes/modules/checkout-steps/templates/page-cart.php:89
+msgid "No se pudo renderizar el carrito."
+msgstr "No se pudo renderizar el carrito."
+
+#: includes/admin/class-sp-wsv-admin.php:238
+#: includes/admin/class-sp-wsv-admin.php:287
+#: includes/admin/class-sp-wsv-admin.php:310
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:529
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:628
+msgid "No tienes permisos para acceder a esta página."
+msgstr "No tienes permisos para acceder a esta página."
+
+#: includes/admin/class-sp-wsv-admin.php:253
+msgid "No tienes permisos."
+msgstr "No tienes permisos."
+
+#: includes/admin/views/modules-page.php:100
+msgid "Obtener PRO"
+msgstr "Obtener PRO"
+
+#: includes/admin/class-sp-wsv-admin.php:165
+#: includes/admin/class-sp-wsv-admin.php:168
+msgid "Obtener versión PRO"
+msgstr "Obtener versión PRO"
+
+#: includes/admin/class-sp-wsv-admin.php:67
+msgid "Obtener SuperPlus para Woocommerce PRO"
+msgstr "Obtener SuperPlus para Woocommerce PRO"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:362
+msgid "Oscuro"
+msgstr "Oscuro"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:137
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:38
+msgid "Pasos"
+msgstr "Pasos"
+
+#: includes/modules/checkout-steps/templates/page-cart.php:42
+msgid "Pasos del checkout"
+msgstr "Pasos del checkout"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:29
+msgid ""
+"Permite establecer una pequeña imagen en los productos. Visible desde el "
+"catálogo."
+msgstr ""
+"Permite establecer una pequeña imagen en los productos. Visible desde el "
+"catálogo."
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:24
+msgid ""
+"Permite guardar múltiples direcciones en una sola cuenta. Solo para clientes "
+"registrados."
+msgstr ""
+"Permite guardar múltiples direcciones en una sola cuenta. Solo para clientes "
+"registrados."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:723
+msgid "Por favor, elige un método de envío para continuar."
+msgstr "Por favor, elige un método de envío para continuar."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:724
+msgid "Por favor, elige un método de pago para continuar."
+msgstr "Por favor, elige un método de pago para continuar."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:725
+msgid "Por favor, introduce un código de cupón."
+msgstr "Por favor, introduce un código de cupón."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:722
+msgid "Por favor, revisa los campos obligatorios antes de continuar."
+msgstr "Por favor, revisa los campos obligatorios antes de continuar."
+
+#: includes/admin/views/modules-page.php:93
+#: includes/admin/views/modules-page.php:95
+msgid "Próximamente…"
+msgstr "Próximamente…"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:229
+msgid "Realizar pedido"
+msgstr "Realizar pedido"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:161
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:188
+#: includes/modules/checkout-steps/templates/page-cart.php:65
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:66
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:196
+msgid "Resumen"
+msgstr "Resumen"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:842
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:905
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:103
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:193
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout.php:69
+msgid "Resumen del pedido"
+msgstr "Resumen del pedido"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:219
+msgid "Revisar pedido"
+msgstr "Revisar pedido"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:596
+msgid ""
+"Se inyecta al final del CSS del módulo. Úsalo para ajustes finos sin tocar "
+"el plugin."
+msgstr ""
+"Se inyecta al final del CSS del módulo. Úsalo para ajustes finos sin tocar "
+"el plugin."
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:28
+msgid "Sello de recomendado"
+msgstr "Sello de recomendado"
+
+#: includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php:19
+msgid "Simplemente los hace bonitos, compatible con cualquier tienda online."
+msgstr "Simplemente los hace bonitos, compatible con cualquier tienda online."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:356
+msgid "Sin tema"
+msgstr "Sin tema"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:1056
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: includes/admin/class-sp-wsv-admin.php:135
+#: includes/admin/class-sp-wsv-admin.php:136
+msgid "SuperPlus"
+msgstr "SuperPlus"
+
+#. Name of the plugin
+msgid "SuperPlus para Woocommerce"
+msgstr "SuperPlus para Woocommerce"
+
+#: includes/class-sp-wsv-plugin.php:69
+msgid "SuperPlus para Woocommerce requiere WooCommerce instalado y activo."
+msgstr "SuperPlus para Woocommerce requiere WooCommerce instalado y activo."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:570
+msgid "Tema"
+msgstr "Tema"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:609
+msgid ""
+"Tip: para previsualizar, abre carrito y checkout en otra pestaña y refresca "
+"tras guardar."
+msgstr ""
+"Tip: para previsualizar, abre carrito y checkout en otra pestaña y refresca "
+"tras guardar."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:1119
+msgid "Total"
+msgstr "Total"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:913
+msgid "Tu carrito está vacío."
+msgstr "Tu carrito está vacío."
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:844
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:196
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout.php:71
+msgid "Tu pedido"
+msgstr "Tu pedido"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:216
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:226
+msgid "Volver"
+msgstr "Volver"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:97
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:914
+msgid "Volver a la tienda"
+msgstr "Volver a la tienda"
+
+#: includes/modules/checkout-steps/templates/woocommerce/checkout/form-checkout-steps.php:206
+msgid "Volver al carrito"
+msgstr "Volver al carrito"
+
+#: includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php:347
+msgid "Woocommerce por pasos"
+msgstr "Woocommerce por pasos"
+
+#: includes/admin/class-sp-wsv-admin.php:64
+msgid "¿Quieres desbloquear los módulos PRO?"
+msgstr "¿Quieres desbloquear los módulos PRO?"
