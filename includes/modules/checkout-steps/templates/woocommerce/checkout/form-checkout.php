@@ -33,9 +33,9 @@ if (function_exists('WC') && WC()->cart && WC()->cart->is_empty()) {
             <?php
             // Render price bar for PRO version
             if (defined('SP_WSV_PRO_VERSION') && class_exists('SP_WSV_Checkout_Steps_Pro')) {
-                $pro_instance = new SP_WSV_Checkout_Steps_Pro();
-                if (method_exists($pro_instance, 'render_checkout_price_bar_on_checkout')) {
-                    $pro_instance->render_checkout_price_bar_on_checkout();
+                $sp_wsv_pro_instance = new SP_WSV_Checkout_Steps_Pro();
+                if (method_exists($sp_wsv_pro_instance, 'render_checkout_price_bar_on_checkout')) {
+                    $sp_wsv_pro_instance->render_checkout_price_bar_on_checkout();
                 }
             }
             ?>
