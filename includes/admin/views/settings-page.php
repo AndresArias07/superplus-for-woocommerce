@@ -6,21 +6,19 @@ if (! defined('ABSPATH')) {
 $sp_wsv_tabs = $tabs;
 $sp_wsv_active_tab = $active_tab;
 $dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismissed', true);
-
-// DEBUG: Verificar valor
-echo '<!-- DEBUG: dismissed = ';
-var_dump($dismissed);
-echo ' -->';
-echo '<!-- DEBUG: user_id = ';
-var_dump(get_current_user_id());
-echo ' -->';
+$settings_updated = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
 ?>
 <div class="wrap sp-wsv-wrap">
     <div class="sp-wsv-settings-container">
         <h1><?php echo esc_html__('Configuración de SuperPlus para Woocommerce', 'superplus-for-woocommerce'); ?></h1>
+        <?php if ($settings_updated) : ?>
+            <div class="notice notice-success is-dismissible">
+                <p><?php echo esc_html__('Cambios actualizados correctamente.', 'superplus-for-woocommerce'); ?></p>
+            </div>
+        <?php endif; ?>
         <?php if (!$dismissed) { ?>
             <div id="sp-comunidad-alert" class="alert-comunidad">
-                <span>¡Únete a la comunidad Tribu WP! Construye la solucion que tu cliente necesita.</span>
+                <span>¡Únete a la comunidad Tribu WP! Escala tu negocio con las herramientas que tus clientes necesitan.</span>
                 <a href="<?= esc_url('https://chat.whatsapp.com/DGiuqztlTlnAYalWnRTcQt?mode=gi_t') ?>" target="_blank" class="btn btn-whatsapp">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />

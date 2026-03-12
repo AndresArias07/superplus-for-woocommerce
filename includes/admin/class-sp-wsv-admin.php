@@ -160,19 +160,28 @@ class SP_WSV_Admin
             text-align: center;
             border: none !important;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            transition: transform 0.2s ease, filter 0.2s ease;
+            transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #adminmenu .wp-submenu a[href*="sp-wsv-get-pro"]:visited {
+            background: linear-gradient(135deg, #1a1a6e, #b21f7a);
+            color: #ffffff !important;
         }
 
         #adminmenu .wp-submenu a[href*="sp-wsv-get-pro"]:hover,
         #adminmenu .wp-submenu a[href*="sp-wsv-get-pro"]:focus {
             filter: brightness(1.1);
             transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             color: #ffffff !important;
             background: linear-gradient(135deg, rgb(26, 26, 110), rgb(178, 31, 122)) !important;
         }
 
-        #adminmenu .wp-submenu li.current a[href*="sp-wsv-get-pro"] {
-            background: linear-gradient(135deg, #1a1a6e, #b21f7a);
+        #adminmenu .wp-submenu li.current a[href*="sp-wsv-get-pro"],
+        #adminmenu .wp-submenu li a:hover,
+        #adminmenu .wp-submenu li:focus-within {
+            background: linear-gradient(135deg, #1a1a6e, #b21f7a) !important;
+            color: #ffffff !important;
         }
 
         ');
