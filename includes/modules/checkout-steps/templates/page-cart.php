@@ -78,16 +78,17 @@ $sp_wsv_extra_body_class = $sp_wsv_cart_empty ? ' sp-wsv-cart-empty' : '';
             <div class="sp-wsv-cart-notices">
                 <div class="sp-wsv-cart-notices-inner">
                     <?php
-                // Render barra de precio para la version PRO - ubicación estratégica antes del contenido del carrito
-                if (defined('SP_WSV_PRO_VERSION') && class_exists('SP_WSV_Checkout_Steps_Pro')) {
-                    $pro_instance = new SP_WSV_Checkout_Steps_Pro();
-                    if (method_exists($pro_instance, 'render_checkout_price_bar_on_cart')) {
-                        echo '<div class="sp-wsv-price-bar-container">';
-                        $pro_instance->render_checkout_price_bar_on_cart();
-                        echo '</div>';
+                    // Render barra de precio para la version PRO - ubicación estratégica antes del contenido del carrito
+                    if (defined('SP_WSV_PRO_VERSION') && class_exists('SP_WSV_Checkout_Steps_Pro')) {
+                        $sp_wsv_pro_instance = new SP_WSV_Checkout_Steps_Pro();
+
+                        if (method_exists($sp_wsv_pro_instance, 'render_checkout_price_bar_on_cart')) {
+                            echo '<div class="sp-wsv-price-bar-container">';
+                            $sp_wsv_pro_instance->render_checkout_price_bar_on_cart();
+                            echo '</div>';
+                        }
                     }
-                }
-                ?>
+                    ?>
                     <?php
                     if (function_exists('wc_print_notices')) {
                         wc_print_notices();
@@ -109,7 +110,7 @@ $sp_wsv_extra_body_class = $sp_wsv_cart_empty ? ' sp-wsv-cart-empty' : '';
                 endwhile;
             endif;
             ?>
-            
+
         </div>
     </main>
 

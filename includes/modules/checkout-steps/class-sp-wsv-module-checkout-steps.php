@@ -358,8 +358,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
         $distributions = array(
             'minimal-steps'    => array(
                 'title' => __('Minimalista por pasos', 'superplus-for-woocommerce'),
-                'description' => __('Diseño minimalista con pasos secuenciales. Ideal para experiencias de compra fluidas y sin distracciones.'),
-
+                'description' => __('Diseño minimalista con pasos secuenciales. Ideal para experiencias de compra fluidas y sin distracciones.', 'superplus-for-woocommerce'),
             ),
             'woocommerce-steps' => array(
                 'title' => __('Woocommerce por pasos', 'superplus-for-woocommerce'),
@@ -689,13 +688,18 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
             </table>
 
             <?php
-            $is_saved = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
+            // Add nonce verification before processing $_GET
+            if (isset($_GET['settings-updated']) && isset($_GET['_wpnonce']) && wp_verify_nonce(sanitize_key(wp_unslash($_GET['_wpnonce'])), 'settings_options')) {
+                $is_saved = sanitize_key(wp_unslash($_GET['settings-updated'])) === 'true';
+            } else {
+                $is_saved = false;
+            }
             ?>
             <div style="display:flex; gap:8px; align-items:center;">
                 <?php submit_button('', 'primary', 'submit', false); ?>
 
                 <a
-                    href="<?= home_url('finalizar-compra/#sp-wsv-step-2') ?>"
+                    href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')) ?>"
                     target="_blank"
                     type="button"
                     class="button"
