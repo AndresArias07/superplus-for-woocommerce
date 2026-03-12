@@ -5,18 +5,21 @@ if (! defined('ABSPATH')) {
 
 $sp_wsv_tabs = $tabs;
 $sp_wsv_active_tab = $active_tab;
-$dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismissed', true);
-$settings_updated = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
+$sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismissed', true);
+
+// Verify nonce for settings update message
+check_admin_referer('options.php');
+$sp_wsv_settings_updated = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
 ?>
 <div class="wrap sp-wsv-wrap">
     <div class="sp-wsv-settings-container">
         <h1><?php echo esc_html__('Configuración de SuperPlus para Woocommerce', 'superplus-for-woocommerce'); ?></h1>
-        <?php if ($settings_updated) : ?>
+        <?php if ($sp_wsv_settings_updated) : ?>
             <div class="notice notice-success is-dismissible">
                 <p><?php echo esc_html__('Cambios actualizados correctamente.', 'superplus-for-woocommerce'); ?></p>
             </div>
         <?php endif; ?>
-        <?php if (!$dismissed) { ?>
+        <?php if (!$sp_wsv_dismissed) { ?>
             <div id="sp-comunidad-alert" class="alert-comunidad">
                 <span>¡Únete a la comunidad Tribu WP! Escala tu negocio con las herramientas que tus clientes necesitan.</span>
                 <a href="<?php echo esc_url('https://chat.whatsapp.com/DGiuqztlTlnAYalWnRTcQt?mode=gi_t') ?>" target="_blank" class="btn btn-whatsapp">

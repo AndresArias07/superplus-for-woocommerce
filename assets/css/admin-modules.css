@@ -68,7 +68,7 @@
 .sp-wsv-pro-header-btn:visited{
   filter: brightness(1.1);
   transform: translateY(-1px);
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .sp-wsv-subtitle {
@@ -450,25 +450,25 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   white-space: nowrap;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover { 
-  color: #fff; 
+  color: #fff !important;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .btn:focus {
-  color: #fff;
+  color: #fff !important;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   outline: 2px solid rgba(255,255,255,0.5);
   outline-offset: 2px;
 }
-.btn:visited { color: #fff; }
+.btn:visited { color: #fff !important; }
 .btn svg { width: 15px; height: 15px; }
 .btn-whatsapp { background-color: #25D366; }
 .btn-whatsapp:hover { background-color: #1da851; }
@@ -481,4 +481,28 @@
   .alert-comunidad { flex-direction: column; align-items: flex-start; }
   .alert-comunidad span { min-width: unset; width: 100%; }
   .btn { width: 90%; justify-content: center; }
+}
+
+/* Plugin action links - Obtener PRO button */
+.plugins-list .sp-wsv-go-pro-popup-trigger,
+tr.active .sp-wsv-go-pro-popup-trigger,
+#the-list .sp-wsv-go-pro-popup-trigger {
+  display: inline-block !important;
+  padding: 4px 10px !important;
+  margin: 0 4px;
+  background: linear-gradient(135deg, #1a1a6e, #b21f7a) !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.plugins-list .sp-wsv-go-pro-popup-trigger:hover,
+tr.active .sp-wsv-go-pro-popup-trigger:hover,
+#the-list .sp-wsv-go-pro-popup-trigger:hover {
+  background: linear-gradient(135deg, #2a2a8e, #c22f8a) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }

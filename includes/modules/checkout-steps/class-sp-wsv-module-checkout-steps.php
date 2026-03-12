@@ -568,7 +568,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
         $is_saved = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
     ?>
         <a
-            href="<?= home_url('finalizar-compra/#sp-wsv-step-2') ?>"
+            href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')); ?>"
             target="_blank"
             type="button"
             class="button"
