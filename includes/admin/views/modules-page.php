@@ -27,7 +27,6 @@ $dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismis
                     <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
                 </svg>
             </button>
-    
         </div>
     <?php } ?>
 
