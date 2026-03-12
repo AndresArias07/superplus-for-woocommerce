@@ -565,10 +565,26 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
 
     protected function render_settings_form()
     {
+        $is_saved = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
+    ?>
+        <a
+            href="<?= home_url('finalizar-compra/#sp-wsv-step-2') ?>"
+            target="_blank"
+            type="button"
+            class="button"
+            <?php echo $is_saved ? '' : 'disabled'; ?>
+            title="<?php echo $is_saved
+                        ? esc_attr__('Abrir vista previa', 'superplus-for-woocommerce')
+                        : esc_attr__('Guarda los cambios para habilitar la vista previa.', 'superplus-for-woocommerce'); ?>">
+
+            Vista Previa
+        </a>
+        <?php
         $opts = $this->get_options();
         $distributions = self::get_available_distributions();
         $themes = self::get_available_themes();
-    ?>
+        ?>
+
         <form method="post" action="options.php">
             <?php settings_fields('sp_wsv_checkout_steps'); ?>
 
@@ -636,7 +652,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
                                             <div class="spwsv-free-card__header-top">
                                                 <strong><?php echo esc_html__('Tema', 'superplus-for-woocommerce'); ?></strong>
                                             </div>
-                                            <p><?php echo esc_html__('Cambia los colores y el contraste del diseño. "Sin tema" usa el estilo del tema activo.', 'superplus-for-woocommerce'); ?></p>
+                                            <p><?php echo esc_html__('Cambia los colores y el contraste del diseño. "Sin estilos" usa el estilo del tema activo.', 'superplus-for-woocommerce'); ?></p>
                                         </div>
                                     </div>
                                 </div>

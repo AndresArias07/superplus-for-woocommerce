@@ -8,7 +8,7 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
 <div class="wrap sp-wsv-wrap">
     <?php if (!$sp_wsv_dismissed) { ?>
         <div id="sp-comunidad-alert" class="alert-comunidad">
-            <span>¡Únete a la comunidad Tribu WP! Construye la solucion que tu cliente necesita.</span>
+            <span>¡Únete a la comunidad Tribu WP! Escala tu negocio con las herramientas que tus clientes necesitan.</span>
             <a href="<?php echo esc_url('https://chat.whatsapp.com/DGiuqztlTlnAYalWnRTcQt?mode=gi_t') ?>" target="_blank" class="btn btn-whatsapp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -31,17 +31,17 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
     <?php } ?>
 
     <div class="sp-wsv-header">
+        <?php if (! empty($notice)) : ?>
+            <div class="notice notice-success is-dismissible">
+                <p><?php echo esc_html($notice); ?></p>
+            </div>
+        <?php endif; ?>
         <h1 class="sp-wsv-title"><?php echo esc_html__('Gestión de módulos', 'superplus-for-woocommerce'); ?></h1>
         <p class="sp-wsv-subtitle">
             <?php echo esc_html__('Activa o desactiva los módulos disponibles y gestionalos a tu gusto.', 'superplus-for-woocommerce'); ?>
         </p>
     </div>
 
-    <?php if (! empty($notice)) : ?>
-        <div class="notice notice-success is-dismissible">
-            <p><?php echo esc_html($notice); ?></p>
-        </div>
-    <?php endif; ?>
 
     <form class="sp-wsv-form" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
         <input type="hidden" name="action" value="sp_wsv_save_modules" />
@@ -166,7 +166,7 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
 
                 <div class="sp-wsv-card is-locked">
                     <div class="sp-wsv-card-icon">
-                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/preguntas-frecuentes.png'); ?>" alt="" />
+                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/alertas-woo.png'); ?>" alt="" />
                     </div>
                     <div class="sp-wsv-card-top">
                         <div class="sp-wsv-card-meta">
@@ -177,17 +177,17 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
                             <span class="sp-wsv-badge sp-wsv-badge-tier">PRO</span>
                         </div>
                     </div>
-                    <div class="sp-wsv-card-desc"><?php esc_html_e('Los embellece con un diseño atractivo, compatible con cualquier tienda online.', 'superplus-for-woocommerce'); ?></div>
+                    <div class="sp-wsv-card-desc"><?php esc_html_e('Sustituye los avisos genéricos de WooCommerce por notificaciones con diseño atractivo que refuerzan la imagen de tu marca.', 'superplus-for-woocommerce'); ?></div>
 
                 </div>
 
                 <div class="sp-wsv-card is-locked">
                     <div class="sp-wsv-card-icon">
-                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/multi-direccion.webp'); ?>" alt="" />
+                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/multi-direccion.png'); ?>" alt="" />
                     </div>
                     <div class="sp-wsv-card-top">
                         <div class="sp-wsv-card-meta">
-                            <div class="sp-wsv-card-title"><?php esc_html_e('Direcciones múltiples', 'superplus-for-woocommerce'); ?></div>
+                            <div class="sp-wsv-card-title"><?php esc_html_e('Todas tus direcciones, siempre a mano', 'superplus-for-woocommerce'); ?></div>
                             <div class="sp-wsv-card-id"></div>
                         </div>
                         <div class="sp-wsv-card-badges">
@@ -195,7 +195,7 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
                             <span class="sp-wsv-badge"><?php esc_html_e('En desarrollo', 'superplus-for-woocommerce'); ?></span>
                         </div>
                     </div>
-                    <div class="sp-wsv-card-desc"><?php esc_html_e('Permite guardar múltiples direcciones en una sola cuenta. Solo para clientes registrados.', 'superplus-for-woocommerce'); ?></div>
+                    <div class="sp-wsv-card-desc"><?php esc_html_e('Tus clientes registrados pueden guardar varias direcciones y elegir la correcta en cada pedido. Sin reescribir, sin errores, sin fricción.', 'superplus-for-woocommerce'); ?></div>
                     <div class="sp-wsv-card-actions">
                         <button type="button" class="button button-secondary" disabled>
                             <?php esc_html_e('Próximamente…', 'superplus-for-woocommerce'); ?>
@@ -205,12 +205,12 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
 
                 <div class="sp-wsv-card is-locked">
                     <div class="sp-wsv-card-icon">
-                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/sello-recomendado.webp'); ?>" alt="" />
+                        <img src="<?php echo esc_url(SP_WSV_URL . 'includes/modules/assets/img/sello-recomendado.png'); ?>" alt="" />
                     </div>
 
                     <div class="sp-wsv-card-top">
                         <div class="sp-wsv-card-meta">
-                            <div class="sp-wsv-card-title"><?php esc_html_e('Sello de recomendado', 'superplus-for-woocommerce'); ?></div>
+                            <div class="sp-wsv-card-title"><?php esc_html_e('Destaca los productos que más venden', 'superplus-for-woocommerce'); ?></div>
                             <div class="sp-wsv-card-id"></div>
                         </div>
                         <div class="sp-wsv-card-badges">
@@ -219,7 +219,7 @@ $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad
                         </div>
                     </div>
 
-                    <div class="sp-wsv-card-desc"><?php esc_html_e('Permite establecer una pequeña imagen en los productos. Visible desde el catálogo.', 'superplus-for-woocommerce'); ?></div>
+                    <div class="sp-wsv-card-desc"><?php esc_html_e('Añade un sello visual a cualquier producto y hazlo destacar desde el catálogo. Ideal para marcar favoritos, novedades o los más vendidos.', 'superplus-for-woocommerce'); ?></div>
                     <div class="sp-wsv-card-actions">
                         <button type="button" class="button button-secondary" disabled>
                             <?php esc_html_e('Próximamente…', 'superplus-for-woocommerce'); ?>
