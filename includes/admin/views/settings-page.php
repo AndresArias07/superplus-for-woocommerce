@@ -6,9 +6,6 @@ if (! defined('ABSPATH')) {
 $sp_wsv_tabs = $tabs;
 $sp_wsv_active_tab = $active_tab;
 $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismissed', true);
-
-// Verify nonce for settings update message
-check_admin_referer('options.php');
 $sp_wsv_settings_updated = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
 ?>
 <div class="wrap sp-wsv-wrap">
