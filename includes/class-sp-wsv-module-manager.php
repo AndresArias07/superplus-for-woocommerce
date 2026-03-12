@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 class SP_WSV_Module_Manager {
 
-    private $wsv_modules = array();
+    private $wsv_module = array();
     private $option_key = 'sp_wsv_active_modules';
     private $extenders = array();
 

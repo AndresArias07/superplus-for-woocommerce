@@ -12,7 +12,7 @@ final class SP_WSV_Plugin {
     private static $instance = null;
 
     /** @var SP_WSV_Module_Manager */
-    public $wsv_modules;
+    public $modules;
 
     public static function instance() {
         if ( null === self::$instance ) {
@@ -54,6 +54,7 @@ final class SP_WSV_Plugin {
         if ( ! class_exists( 'WooCommerce' ) ) {
             return;
         }
+            
         $this->modules->boot_active_modules();
     }
 
@@ -61,6 +62,7 @@ final class SP_WSV_Plugin {
         if ( class_exists( 'WooCommerce' ) ) {
             return;
         }
+        
         if ( ! current_user_can( 'activate_plugins' ) ) {
             return;
         }
@@ -70,35 +72,12 @@ final class SP_WSV_Plugin {
         echo '</p></div>';
     }
 
-    private function register_pro_skeletons() {
-        require_once SP_WSV_PATH . 'includes/modules/pro-skeletons/class-sp-wsv-module-pro-skeleton.php';
-        require_once SP_WSV_PATH . 'includes/modules/pro-skeletons/class-sp-wsv-pro-skeleton-definitions.php';
-
-        $defs = SP_WSV_Pro_Skeleton_Definitions::get();
-
-        foreach ( $defs as $id => $data ) {
-            $this->modules->register(
-                new SP_WSV_Module_Pro_Skeleton(
-                    $id,
-                    $data['title'],
-                    $data['description'],
-                    array(
-                        'image_url'  => isset( $data['image_url'] ) ? $data['image_url'] : '',
-                    )
-                )
-            );
-        }
-    }
-
     public function register_modules() {
         // FREE modules shipped in the CORE
         $this->modules->register_class(
             'SP_WSV_Module_Checkout_Steps',
             SP_WSV_PATH . 'includes/modules/checkout-steps/class-sp-wsv-module-checkout-steps.php'
         );
-
-        // PRO placeholders (UI only)
-        $this->register_pro_skeletons();
 
         /**
          * Extension point to register extra modules (e.g. PRO real modules).

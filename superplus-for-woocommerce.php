@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: SuperPlus for Woocommerce
+ * Plugin Name: SuperPlus for Woocommerce 
  * Description: Mejora tu tienda online con menos de diez clics. Compatible con WooCommerce.
  * Version: 1.0.1
  * Author: Agencia SP

@@ -20,6 +20,14 @@ if ( function_exists( 'WC' ) && WC()->cart && WC()->cart->is_empty() ) {
     return;
 }
 
+// Render barra de precio para la version PRO
+if ( defined( 'SP_WSV_PRO_VERSION' ) && class_exists( 'SP_WSV_Checkout_Steps_Pro' ) ) {
+    $pro_instance = new SP_WSV_Checkout_Steps_Pro();
+    if ( method_exists( $pro_instance, 'render_checkout_price_bar_on_checkout' ) ) {
+        $pro_instance->render_checkout_price_bar_on_checkout();
+    }
+}
+
 $sp_wsv_cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : home_url( '/' );
 $sp_wsv_has_cart_page = SP_WSV_Module_Checkout_Steps::has_cart_page();
 $sp_wsv_options = SP_WSV_Module_Checkout_Steps::get_options_static();
