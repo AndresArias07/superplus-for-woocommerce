@@ -22,8 +22,23 @@ class SP_WSV_Admin
         add_action('admin_menu', array($this, 'register_menu'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_assets'));
         add_action('admin_post_sp_wsv_save_modules', array($this, 'handle_save_modules'));
-        // registrar ajax , dissmiss alerta comunidad
+        // Registrar ajax , dissmiss alerta comunidad
         add_action('wp_ajax_sp_wsv_dismiss_comunidad_alert', [$this, 'ajax_dismiss_alert']);
+        // Agregar nonce a la redirección de settings
+        add_filter('redirect_location', array($this, 'add_nonce_to_redirect'), 20);
+    }
+
+    /**
+     * Agregar nonce a la URL de redirección después de guardar settings
+     */
+    public function add_nonce_to_redirect($location) {
+        // Solo agregar nonce si es una redirección de settings
+        if (strpos($location, 'settings-updated') !== false) {
+            $nonce = wp_create_nonce('sp_wsv_settings_nonce');
+            // Usar _wpnonce para compatibilidad con WordPress Settings API
+            $location = add_query_arg('_wpnonce', $nonce, $location);
+        }
+        return $location;
     }
     public function ajax_dismiss_alert()
     {
@@ -176,14 +191,6 @@ class SP_WSV_Admin
             color: #ffffff !important;
             background: linear-gradient(135deg, rgb(26, 26, 110), rgb(178, 31, 122)) !important;
         }
-
-        #adminmenu .wp-submenu li.current a[href*="sp-wsv-get-pro"],
-        #adminmenu .wp-submenu li a:hover,
-        #adminmenu .wp-submenu li:focus-within {
-            background: linear-gradient(135deg, #1a1a6e, #b21f7a) !important;
-            color: #ffffff !important;
-        }
-
         ');
 
         if ((empty($this->page_hook) || $hook_suffix !== $this->page_hook)) {

@@ -6,7 +6,17 @@ if (! defined('ABSPATH')) {
 $sp_wsv_tabs = $tabs;
 $sp_wsv_active_tab = $active_tab;
 $sp_wsv_dismissed = (int) get_user_meta(get_current_user_id(), 'sp_wsv_comunidad_dismissed', true);
-$sp_wsv_settings_updated = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
+
+$sp_wsv_settings_updated = false;
+if (isset($_GET['settings-updated'])) {
+    if (isset($_GET['_wpnonce']) && !empty($_GET['_wpnonce'])) {
+        if (wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['_wpnonce'])), 'sp_wsv_settings_nonce')) {
+            $sp_wsv_settings_updated = $_GET['settings-updated'] === 'true';
+        }
+    } else {
+        $sp_wsv_settings_updated = $_GET['settings-updated'] === 'true';
+    }
+}
 ?>
 <div class="wrap sp-wsv-wrap">
     <div class="sp-wsv-settings-container">

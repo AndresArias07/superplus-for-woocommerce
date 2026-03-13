@@ -572,7 +572,6 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
             target="_blank"
             type="button"
             class="button"
-            <?php echo $is_saved ? '' : 'disabled'; ?>
             title="<?php echo $is_saved
                         ? esc_attr__('Abrir vista previa', 'superplus-for-woocommerce')
                         : esc_attr__('Guarda los cambios para habilitar la vista previa.', 'superplus-for-woocommerce'); ?>">
@@ -586,8 +585,11 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
         ?>
 
         <form method="post" action="options.php">
-            <?php settings_fields('sp_wsv_checkout_steps'); ?>
-
+            <?php
+            settings_fields('sp_wsv_checkout_steps');
+            // nonce para verificarlo en settings
+            wp_nonce_field('sp_wsv_settings_nonce', 'sp_wsv_settings_nonce_field');
+            ?>
             <table class="form-table" role="presentation">
                 <tbody>
                     <tr class="spwsv-free-row">
@@ -715,11 +717,10 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
                 <?php submit_button('', 'primary', 'submit', false); ?>
 
                 <a
-                    href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')) ?>"
+                    href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')); ?>"
                     target="_blank"
                     type="button"
                     class="button"
-                    <?php echo $is_saved ? '' : 'disabled'; ?>
                     title="<?php echo $is_saved
                                 ? esc_attr__('Abrir vista previa', 'superplus-for-woocommerce')
                                 : esc_attr__('Guarda los cambios para habilitar la vista previa.', 'superplus-for-woocommerce'); ?>">
