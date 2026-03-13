@@ -1,6 +1,6 @@
-=== SuperPlus for Woocommerce ===
+=== SuperPlus for WooCommerce – Multi-Step Checkout, Smart Search & UX Modules ===
 Contributors: agenciasp
-Tags: checkout, woocommerce, step-checkout, multi-step, ux
+Tags: multi-step checkout, woocommerce checkout, step checkout, checkout steps, checkout wizard, checkout customization, checkout optimization, ux, woocommerce ux, smart search, mobile menu
 Requires Plugins: woocommerce
 Requires at least: 4.7
 Tested up to: 6.9
@@ -9,25 +9,113 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-SuperPlus adds a step-by-step checkout and UX improvements with a simple modules manager for WooCommerce.
+Multi-step checkout for WooCommerce — no bloat, no conflicts. Only the features you enable are loaded.
 
 == Description ==
 
-SuperPlus is built for WooCommerce stores that want quick improvements without “bloated” features they won’t use. From the **Modules Manager** panel, you can enable/disable modules (disabled modules do not load hooks or assets).
+== Description ==
 
-It includes a free module:
+**SuperPlus** is a modular WooCommerce plugin designed for developers
+and agencies that want clean, targeted improvements — without
+installing bloated all-in-one solutions.
 
-* **Checkout (Step-by-step checkout)**: visual improvement of the checkout with a step flow, step header, and simple styling options.
+Other plugins:
+❌ Most checkout plugins load everything — even features you never use.
+❌ Unused scripts and styles slow down your store on every page.
+❌ Conflicts with your theme or other plugins break the checkout.
 
-= Included module: Checkout (Step-by-step checkout) =
+SuperPlus:
+✅ SuperPlus loads only the modules you enable — nothing more.
+✅ Zero performance impact from inactive features.
+✅ Clean, conflict-free checkout your customers will actually complete.
 
-Key features:
+### ⚠️ The problem with most WooCommerce checkout plugins
 
-* Two **layouts** (style/flow): *Minimal step-by-step* and *WooCommerce step-by-step*.
-* **Theme** selector: *No theme*, *Light*, or *Dark* (only affects colors/contrast).
-* **Additional CSS** field for fine tuning (injected at the end of the module CSS).
+Most checkout plugins load all their code on every page, regardless
+of what you actually use. Scripts, styles, and templates running in
+the background — even for features you never enabled.
 
-Note: when active, the module uses its own templates for **Cart** and **Checkout** to apply the layout/structure.
+SuperPlus works differently.
+
+### 🧩 A lightweight modular system
+
+From the **Modules Manager**, you enable only the features your store
+needs. Everything else stays completely inactive — no impact on
+performance, no risk of conflicts with your theme or other plugins.
+
+This makes SuperPlus ideal for agencies managing multiple WooCommerce
+stores: install once, configure per project, keep full control.
+
+### 🛒 Free module: Multi-Step Checkout
+
+Transform the standard WooCommerce checkout into a clean
+**step-by-step checkout flow** that guides customers through the
+purchase process.
+
+**📐 Two layouts:**
+* **Minimal step-by-step** — clean, distraction-free checkout
+* **WooCommerce step-by-step** — familiar WooCommerce structure
+with step navigation
+
+**🎨 Three themes:**
+* No theme — unstyled, fully compatible with your existing CSS
+* Light — clean light styling out of the box
+* Dark — dark mode ready
+
+**✏️ Additional CSS field** — inject your own overrides without
+touching plugin files. Perfect for agencies adapting SuperPlus
+to client themes.
+
+### 🆓 Free vs 🔒 Pro
+
+**Free — included:**
+* 🛒 Optimized Checkout — multi-step checkout flow that reduces
+cart abandonment and guides customers to purchase
+
+**Pro — advanced modules:**
+* 🔍 Smart Search — instant product search with price and
+category filters
+* 📱 Mobile Menu — fast, branded mobile navigation adapted
+to your store design
+* 💬 WooCommerce Messages — replace generic WooCommerce
+notifications with on-brand messaging
+
+**Coming soon (Pro):**
+* 🗺️ Address Manager — customers save multiple addresses,
+no retyping, no friction
+* 🏷️ Product Highlights — visually badge bestsellers,
+new arrivals, and favorites from the catalog
+
+Each Pro module is independent. Buy only what your store needs.
+
+### 🔌 Compatibility
+
+SuperPlus uses standard WooCommerce hooks and templates, making it
+compatible with any well-coded WordPress theme out of the box.
+
+**✅ Tested and compatible with:**
+* Any theme that follows WooCommerce standards
+* WooCommerce Payments
+
+**⚠️ Potential conflicts:**
+* Plugins that replace WooCommerce checkout templates
+(Elementor Pro checkout, FunnelKit, Fluid Checkout).
+If you use one of these, disable the SuperPlus Checkout module
+to avoid conflicts.
+
+### 🚀 Built to grow
+
+SuperPlus is built around a modular architecture designed to expand.
+New modules will extend the plugin without adding unnecessary weight
+to stores that don't need them.
+
+### 👥 Who is SuperPlus for?
+
+* 🏢 **Agencies** managing WooCommerce stores that need clean,
+conflict-free solutions
+* 👨‍💻 **Developers** who want control over what loads and what doesn't
+* 🏪 **Store owners** tired of bloated plugins that slow down
+their checkout
 
 == Installation ==
 
@@ -67,12 +155,13 @@ It lets you add your own CSS without editing the plugin. It’s added at the end
 
 == Changelog ==
 
-= 1.0.1 =
-* Minor naming updates and internal improvements before review.
-* Module manager.
-* Free module: Checkout (step-by-step) with layout, theme, and additional CSS options.
+= 1.0.0 =
+* Modules Manager: enable or disable each module independently.
+* Free module: Multi-Step Checkout with Minimal and
+WooCommerce-style layouts, Light/Dark themes, step header,
+and Additional CSS field.
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release.
+First public release
