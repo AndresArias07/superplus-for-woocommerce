@@ -568,7 +568,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
         $is_saved = isset($_GET['settings-updated']) && $_GET['settings-updated'] === 'true';
     ?>
         <a
-            href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')); ?>"
+            href="<?php echo esc_url(wc_get_page_permalink('checkout')); ?>"
             target="_blank"
             type="button"
             class="button"
@@ -576,7 +576,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
                         ? esc_attr__('Abrir vista previa', 'superplus-for-woocommerce')
                         : esc_attr__('Guarda los cambios para habilitar la vista previa.', 'superplus-for-woocommerce'); ?>">
 
-            Vista Previa
+            <?php echo esc_html__('Vista Previa', 'superplus-for-woocommerce') ?>
         </a>
         <?php
         $opts = $this->get_options();
@@ -717,7 +717,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
                 <?php submit_button('', 'primary', 'submit', false); ?>
 
                 <a
-                    href="<?php echo esc_url(home_url('finalizar-compra/#sp-wsv-step-2')); ?>"
+                    href="<?php echo esc_url(wc_get_page_permalink('checkout')); ?>" 
                     target="_blank"
                     type="button"
                     class="button"
@@ -725,7 +725,7 @@ class SP_WSV_Module_Checkout_Steps extends SP_WSV_Module
                                 ? esc_attr__('Abrir vista previa', 'superplus-for-woocommerce')
                                 : esc_attr__('Guarda los cambios para habilitar la vista previa.', 'superplus-for-woocommerce'); ?>">
 
-                    Vista Previa
+                    <?php echo esc_html__('Vista Previa', 'superplus-for-woocommerce') ?>
                 </a>
             </div>
         </form>
